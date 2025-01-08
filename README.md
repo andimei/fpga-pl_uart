@@ -104,7 +104,7 @@ Pengujian modul UART yang terintegrasi dengan FIFO dan interface AXI4 Lite untuk
 
 # Percobaan UART Controller + FIFO + AXI4 Lite Interface + ZYNQ (PS)
 Pengujian keseluruhan sistem menggunakan hardware sunggunahn (Z-Turn Board), mencakup UART, FIFO, AXI4 Lite, dan Processing System (PS).
-Pada sisi hardware, pin Tx dan Rx harus dihubungkan untuk skenario loopback.
+Pada sisi hardware, pin Tx dan Rx harus dihubungkan untuk skenario loopback. Dibutuhkan tambahan UART PS untuk debugging.
 <div align="center">
   <img src="docs/uart-fifo-axi-ps-bd.PNG" alt="UART + FIFO + AXI + ZYNQ Block Design"/>
   <p><em>UART + FIFO + AXI + ZYNQ Block Design</em></p>
