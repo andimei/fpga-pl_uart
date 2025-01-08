@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/zynq_uart_fifo_axi/ip/zynq_uart_fifo_axi_rst_ps7_0_50M_0/sim/zynq_uart_fifo_axi_rst_ps7_0_50M_0.vhd" \
+
+# Do not sort compile order
+nosort

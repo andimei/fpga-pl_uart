@@ -1,0 +1,190 @@
+{
+   "ActiveEmotionalView":"Reduced Jogs",
+   "Addressing View_Layers":"/S_AXI_ACLK_0_1:false|/S_AXI_ARESETN_0_1:false|",
+   "Addressing View_ScaleFactor":"1.0",
+   "Addressing View_TopLeft":"-540,-192",
+   "Color Coded_ScaleFactor":"0.667758",
+   "Color Coded_TopLeft":"-183,-67",
+   "Default View_ScaleFactor":"0.70629",
+   "Default View_TopLeft":"-183,-13",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port S_AXI_0 -pg 1 -lvl 0 -x 0 -y 560 -defaultsOSRD
+preplace port port-id_i_RX -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port port-id_o_TX -pg 1 -lvl 5 -x 1520 -y 380 -defaultsOSRD
+preplace port port-id_test_RX_DONE_TICK -pg 1 -lvl 5 -x 1520 -y 180 -defaultsOSRD
+preplace port port-id_test_TX_STARTN -pg 1 -lvl 5 -x 1520 -y 480 -defaultsOSRD
+preplace port port-id_test_TX_RDY_TICK -pg 1 -lvl 5 -x 1520 -y 400 -defaultsOSRD
+preplace port port-id_S_AXI_ACLK_0 -pg 1 -lvl 0 -x 0 -y 580 -defaultsOSRD
+preplace port port-id_S_AXI_ARESETN_0 -pg 1 -lvl 0 -x 0 -y 600 -defaultsOSRD
+preplace portBus test_DOUT -pg 1 -lvl 5 -x 1520 -y 200 -defaultsOSRD
+preplace portBus test_DIN -pg 1 -lvl 5 -x 1520 -y 500 -defaultsOSRD
+preplace inst uart_tx -pg 1 -lvl 4 -x 1330 -y 300 -swap {1 2 3 0 4 5 6} -defaultsOSRD -pinDir i_CLK left -pinY i_CLK 40L -pinDir i_RESET left -pinY i_RESET 60L -pinDir i_TX_STARTN left -pinY i_TX_STARTN 80L -pinDir i_S_TICK left -pinY i_S_TICK 20L -pinBusDir i_DIN left -pinBusY i_DIN 100L -pinDir o_TX right -pinY o_TX 80R -pinDir o_TX_RDY_TICK right -pinY o_TX_RDY_TICK 100R
+preplace inst baudrate_generator -pg 1 -lvl 3 -x 950 -y 40 -defaultsOSRD -pinDir i_CLK left -pinY i_CLK 20L -pinDir i_RESET left -pinY i_RESET 40L -pinBusDir i_DVSR left -pinBusY i_DVSR 60L -pinDir o_TICK right -pinY o_TICK 60R
+preplace inst fifo_tx -pg 1 -lvl 3 -x 950 -y 500 -defaultsOSRD -pinDir FIFO_WRITE left -pinY FIFO_WRITE 60L -pinDir FIFO_WRITE.full left -pinY FIFO_WRITE.full 80L -pinDir FIFO_WRITE.din left -pinY FIFO_WRITE.din 100L -pinDir FIFO_WRITE.wr_en left -pinY FIFO_WRITE.wr_en 120L -pinDir FIFO_READ right -pinY FIFO_READ 20R -pinDir FIFO_READ.empty right -pinY FIFO_READ.empty 40R -pinDir FIFO_READ.dout right -pinY FIFO_READ.dout 60R -pinDir FIFO_READ.rd_en right -pinY FIFO_READ.rd_en 80R -pinDir clk left -pinY clk 140L -pinDir rst left -pinY rst 160L
+preplace inst uart_rx -pg 1 -lvl 4 -x 1330 -y 120 -swap {2 3 1 0 4 5} -defaultsOSRD -pinDir i_CLK left -pinY i_CLK 60L -pinDir i_RESET left -pinY i_RESET 80L -pinDir i_RX left -pinY i_RX 40L -pinDir i_S_TICK left -pinY i_S_TICK 20L -pinDir o_RX_DONE_TICK right -pinY o_RX_DONE_TICK 60R -pinBusDir o_DOUT right -pinBusY o_DOUT 80R
+preplace inst fifo_rx -pg 1 -lvl 1 -x 190 -y 600 -defaultsOSRD -pinDir FIFO_WRITE right -pinY FIFO_WRITE 20R -pinDir FIFO_WRITE.din right -pinY FIFO_WRITE.din 40R -pinDir FIFO_WRITE.wr_en right -pinY FIFO_WRITE.wr_en 60R -pinDir FIFO_READ right -pinY FIFO_READ 80R -pinDir FIFO_READ.empty right -pinY FIFO_READ.empty 100R -pinDir FIFO_READ.dout right -pinY FIFO_READ.dout 120R -pinDir FIFO_READ.rd_en right -pinY FIFO_READ.rd_en 140R -pinDir clk left -pinY clk 20L -pinDir rst left -pinY rst 40L
+preplace inst axi_lite_slave_0 -pg 1 -lvl 2 -x 560 -y 540 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 22 23 21 25 26 24} -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 20L -pinDir S_AXI_ACLK left -pinY S_AXI_ACLK 40L -pinDir S_AXI_ARESETN left -pinY S_AXI_ARESETN 60L -pinBusDir o_DVSR right -pinBusY o_DVSR 20R -pinBusDir i_RX_DATA left -pinBusY i_RX_DATA 180L -pinDir o_RX_RDEN left -pinY o_RX_RDEN 200L -pinDir i_RX_EMPTY left -pinY i_RX_EMPTY 160L -pinBusDir o_TX_DATA right -pinBusY o_TX_DATA 60R -pinDir o_TX_WREN right -pinY o_TX_WREN 80R -pinDir i_TX_FULL right -pinY i_TX_FULL 40R
+preplace netloc baudrate_generator_0_o_TICK 1 3 1 1140 100n
+preplace netloc fifo_tx_dout 1 3 2 1180 500 NJ
+preplace netloc fifo_tx_empty 1 3 2 1140 480 NJ
+preplace netloc i_RX_0_1 1 0 4 NJ 160 NJ 160 NJ 160 NJ
+preplace netloc uart_rx_o_DOUT 1 1 4 340J 260 NJ 260 NJ 260 1480
+preplace netloc uart_rx_o_RX_DONE_TICK 1 1 4 360J 460 NJ 460 NJ 460 1500
+preplace netloc uart_tx_1_o_TX 1 4 1 NJ 380
+preplace netloc uart_tx_o_TX_RDY_TICK 1 3 2 NJ 580 1480
+preplace netloc S_AXI_ACLK_0_1 1 0 4 20 520 380 480 720 180 1160
+preplace netloc S_AXI_ARESETN_0_1 1 0 4 40 540 400 500 740 280 1180
+preplace netloc axi_lite_slave_0_o_DVSR 1 2 1 760 100n
+preplace netloc fifo_rx_empty 1 1 1 N 700
+preplace netloc fifo_rx_dout 1 1 1 N 720
+preplace netloc axi_lite_slave_0_o_RX_RDEN 1 1 1 N 740
+preplace netloc fifo_tx_full 1 2 1 N 580
+preplace netloc axi_lite_slave_0_o_TX_DATA 1 2 1 N 600
+preplace netloc axi_lite_slave_0_o_TX_WREN 1 2 1 N 620
+preplace netloc S_AXI_0_1 1 0 2 NJ 560 NJ
+levelinfo -pg 1 0 190 560 950 1330 1520
+pagesize -pg 1 -db -bbox -sgen -190 0 1710 800
+",
+   "Grouping and No Loops_ScaleFactor":"0.634761",
+   "Grouping and No Loops_TopLeft":"-200,3",
+   "Interfaces View_Layers":"/S_AXI_ACLK_0_1:false|/S_AXI_ARESETN_0_1:false|",
+   "Interfaces View_ScaleFactor":"1.0",
+   "Interfaces View_TopLeft":"-260,-123",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layers":"/S_AXI_ACLK_0_1:true|/S_AXI_ARESETN_0_1:true|",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
+preplace port port-id_i_RX -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace port port-id_o_TX -pg 1 -lvl 4 -x 1120 -y 820 -defaultsOSRD
+preplace port port-id_test_RX_DONE_TICK -pg 1 -lvl 4 -x 1120 -y 100 -defaultsOSRD
+preplace port port-id_test_TX_STARTN -pg 1 -lvl 4 -x 1120 -y 980 -defaultsOSRD
+preplace port port-id_test_TX_RDY_TICK -pg 1 -lvl 4 -x 1120 -y 900 -defaultsOSRD
+preplace port port-id_S_AXI_ACLK -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port port-id_S_AXI_ARESETN -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace port port-id_test_RX_EMPTY -pg 1 -lvl 4 -x 1120 -y 280 -defaultsOSRD
+preplace port port-id_test_RX_RDEN -pg 1 -lvl 4 -x 1120 -y 320 -defaultsOSRD
+preplace port port-id_full_0 -pg 1 -lvl 4 -x 1120 -y 760 -defaultsOSRD
+preplace port port-id_o_TX_WREN_0 -pg 1 -lvl 4 -x 1120 -y 680 -defaultsOSRD
+preplace portBus test_DOUT -pg 1 -lvl 4 -x 1120 -y 120 -defaultsOSRD
+preplace portBus test_DIN -pg 1 -lvl 4 -x 1120 -y 1000 -defaultsOSRD
+preplace portBus test_RX_DATA -pg 1 -lvl 4 -x 1120 -y 300 -defaultsOSRD
+preplace portBus o_TX_DATA_0 -pg 1 -lvl 4 -x 1120 -y 660 -defaultsOSRD
+preplace inst uart_tx -pg 1 -lvl 3 -x 900 -y 800 -swap {0 2 3 1 4 5 6} -defaultsOSRD -pinDir i_CLK left -pinY i_CLK 20L -pinDir i_RESET left -pinY i_RESET 60L -pinDir i_TX_STARTN left -pinY i_TX_STARTN 80L -pinDir i_S_TICK left -pinY i_S_TICK 40L -pinBusDir i_DIN left -pinBusY i_DIN 100L -pinDir o_TX right -pinY o_TX 20R -pinDir o_TX_RDY_TICK right -pinY o_TX_RDY_TICK 100R
+preplace inst baudrate_generator -pg 1 -lvl 2 -x 490 -y 540 -swap {0 1 3 2} -defaultsOSRD -pinDir i_CLK left -pinY i_CLK 20L -pinDir i_RESET left -pinY i_RESET 40L -pinBusDir i_DVSR right -pinBusY i_DVSR 40R -pinDir o_TICK right -pinY o_TICK 20R
+preplace inst fifo_tx -pg 1 -lvl 2 -x 490 -y 680 -defaultsOSRD -pinDir FIFO_WRITE right -pinY FIFO_WRITE 20R -pinDir FIFO_WRITE.full right -pinY FIFO_WRITE.full 40R -pinDir FIFO_WRITE.din right -pinY FIFO_WRITE.din 60R -pinDir FIFO_WRITE.wr_en right -pinY FIFO_WRITE.wr_en 280R -pinDir FIFO_READ right -pinY FIFO_READ 300R -pinDir FIFO_READ.empty right -pinY FIFO_READ.empty 320R -pinDir FIFO_READ.dout right -pinY FIFO_READ.dout 340R -pinDir FIFO_READ.rd_en right -pinY FIFO_READ.rd_en 360R -pinDir clk left -pinY clk 20L -pinDir rst left -pinY rst 40L
+preplace inst uart_rx -pg 1 -lvl 3 -x 900 -y 140 -swap {0 3 1 2 4 5} -defaultsOSRD -pinDir i_CLK left -pinY i_CLK 20L -pinDir i_RESET left -pinY i_RESET 80L -pinDir i_RX left -pinY i_RX 40L -pinDir i_S_TICK left -pinY i_S_TICK 60L -pinDir o_RX_DONE_TICK right -pinY o_RX_DONE_TICK 20R -pinBusDir o_DOUT right -pinBusY o_DOUT 40R
+preplace inst fifo_rx -pg 1 -lvl 2 -x 490 -y 40 -defaultsOSRD -pinDir FIFO_WRITE right -pinY FIFO_WRITE 20R -pinDir FIFO_WRITE.din right -pinY FIFO_WRITE.din 40R -pinDir FIFO_WRITE.wr_en right -pinY FIFO_WRITE.wr_en 60R -pinDir FIFO_READ right -pinY FIFO_READ 220R -pinDir FIFO_READ.empty right -pinY FIFO_READ.empty 240R -pinDir FIFO_READ.dout right -pinY FIFO_READ.dout 260R -pinDir FIFO_READ.rd_en right -pinY FIFO_READ.rd_en 280R -pinDir clk left -pinY clk 240L -pinDir rst left -pinY rst 280L
+preplace inst axi_lite_slave -pg 1 -lvl 3 -x 900 -y 360 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 20 21 23 19 22 18 24 25 26} -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 60L -pinDir S_AXI_ACLK left -pinY S_AXI_ACLK 120L -pinDir S_AXI_ARESETN left -pinY S_AXI_ARESETN 140L -pinBusDir o_DVSR left -pinBusY o_DVSR 220L -pinBusDir i_RX_DATA left -pinBusY i_RX_DATA 100L -pinDir o_RX_RDEN right -pinY o_RX_RDEN 20R -pinDir i_RX_EMPTY left -pinY i_RX_EMPTY 80L -pinBusDir o_TX_DATA right -pinBusY o_TX_DATA 300R -pinDir o_TX_WREN right -pinY o_TX_WREN 320R -pinDir i_TX_FULL left -pinY i_TX_FULL 320L
+preplace inst not_rst -pg 1 -lvl 1 -x 170 -y 320 -defaultsOSRD -pinBusDir Op1 left -pinBusY Op1 20L -pinBusDir Res right -pinBusY Res 20R
+preplace netloc S_AXI_ACLK_0_1 1 0 3 NJ 280 320 380 680
+preplace netloc S_AXI_ARESETN_1_1 1 0 3 20 500 NJ 500 NJ
+preplace netloc axi_lite_slave_0_o_DVSR 1 2 1 N 580
+preplace netloc baudrate_generator_0_o_TICK 1 2 1 700 200n
+preplace netloc fifo_tx_dout 1 2 2 740 1000 NJ
+preplace netloc fifo_tx_empty 1 2 2 640 980 NJ
+preplace netloc i_RX_0_1 1 0 3 NJ 400 NJ 400 640J
+preplace netloc uart_rx_o_DOUT 1 2 2 NJ 80 1080
+preplace netloc uart_rx_o_RX_DONE_TICK 1 2 2 NJ 100 1100
+preplace netloc uart_tx_1_o_TX 1 3 1 NJ 820
+preplace netloc uart_tx_o_TX_RDY_TICK 1 2 2 NJ 1040 1060
+preplace netloc util_vector_logic_0_Res 1 1 2 340 640 720
+preplace netloc fifo_rx_empty 1 2 2 740 280 NJ
+preplace netloc fifo_rx_dout 1 2 2 660 300 NJ
+preplace netloc axi_lite_slave_o_RX_RDEN 1 2 2 NJ 320 1100
+preplace netloc fifo_tx_full 1 2 2 740 760 NJ
+preplace netloc axi_lite_slave_o_TX_DATA 1 2 2 N 740 1100
+preplace netloc axi_lite_slave_o_TX_WREN 1 2 2 NJ 960 1080
+preplace netloc S_AXI_0_1 1 0 3 NJ 420 NJ 420 NJ
+levelinfo -pg 1 0 170 490 900 1120
+pagesize -pg 1 -db -bbox -sgen -170 0 1310 1100
+",
+   "No Loops_ScaleFactor":"1.21578",
+   "No Loops_TopLeft":"55,129",
+   "Reduced Jogs_ExpandedHierarchyInLayout":"",
+   "Reduced Jogs_Layers":"/S_AXI_ACLK_0_1:true|/S_AXI_ARESETN_0_1:true|",
+   "Reduced Jogs_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port port-id_i_RX -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
+preplace port port-id_o_TX -pg 1 -lvl 5 -x 1480 -y 600 -defaultsOSRD
+preplace port port-id_S_AXI_ACLK -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_S_AXI_ARESETN -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace inst uart_tx -pg 1 -lvl 3 -x 890 -y 580 -swap {2 1 4 0 3 5 6} -defaultsOSRD -pinY i_CLK 60L -pinY i_RESET 40L -pinY i_TX_STARTN 120L -pinY i_S_TICK 20L -pinBusY i_DIN 100L -pinY o_TX 20R -pinY o_TX_RDY_TICK 120R
+preplace inst baudrate_generator -pg 1 -lvl 2 -x 580 -y 300 -swap {1 2 0 3} -defaultsOSRD -pinY i_CLK 40L -pinY i_RESET 60L -pinBusY i_DVSR 20L -pinY o_TICK 60R
+preplace inst fifo_tx -pg 1 -lvl 4 -x 1310 -y 640 -defaultsOSRD -pinY FIFO_WRITE 20L -pinY FIFO_WRITE.full 40L -pinY FIFO_WRITE.din 60L -pinY FIFO_WRITE.wr_en 80L -pinY FIFO_READ 100L -pinY FIFO_READ.empty 120L -pinY FIFO_READ.dout 140L -pinY FIFO_READ.rd_en 160L -pinY clk 180L -pinY rst 200L
+preplace inst uart_rx -pg 1 -lvl 3 -x 890 -y 300 -swap {3 2 1 0 5 4} -defaultsOSRD -pinY i_CLK 160L -pinY i_RESET 140L -pinY i_RX 120L -pinY i_S_TICK 60L -pinY o_RX_DONE_TICK 40R -pinBusY o_DOUT 20R
+preplace inst fifo_rx -pg 1 -lvl 4 -x 1310 -y 140 -defaultsOSRD -pinY FIFO_WRITE 20L -pinY FIFO_WRITE.din 40L -pinY FIFO_WRITE.wr_en 60L -pinY FIFO_READ 80L -pinY FIFO_READ.empty 100L -pinY FIFO_READ.dout 120L -pinY FIFO_READ.rd_en 140L -pinY clk 380L -pinY rst 400L
+preplace inst axi_lite_slave -pg 1 -lvl 1 -x 260 -y 40 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 25 26 20 23 22 24 21} -defaultsOSRD -pinY S_AXI 20L -pinY S_AXI_ACLK 40L -pinY S_AXI_ARESETN 60L -pinBusY o_DVSR 120R -pinBusY i_RX_DATA 120L -pinY o_RX_RDEN 60R -pinY i_RX_EMPTY 100L -pinBusY o_TX_DATA 80R -pinY o_TX_WREN 100R -pinY i_TX_FULL 80L
+preplace inst not_rst -pg 1 -lvl 1 -x 260 -y 320 -defaultsOSRD -pinBusY Op1 20L -pinBusY Res 20R
+preplace netloc S_AXI_ACLK_0_1 1 0 4 50 280 440 460 710 520 1170
+preplace netloc S_AXI_ARESETN_1_1 1 0 1 30 100n
+preplace netloc axi_lite_slave_0_o_DVSR 1 1 1 460 160n
+preplace netloc axi_lite_slave_o_RX_RDEN 1 1 3 NJ 100 NJ 100 1170
+preplace netloc axi_lite_slave_o_TX_DATA 1 1 3 NJ 120 NJ 120 1110
+preplace netloc axi_lite_slave_o_TX_WREN 1 1 3 NJ 140 NJ 140 1050
+preplace netloc baudrate_generator_0_o_TICK 1 2 1 750 360n
+preplace netloc fifo_rx_dout 1 0 4 110 220 NJ 220 NJ 220 1150
+preplace netloc fifo_rx_empty 1 0 4 90 240 NJ 240 NJ 240 N
+preplace netloc fifo_tx_dout 1 2 2 710 780 NJ
+preplace netloc fifo_tx_empty 1 2 2 750 760 NJ
+preplace netloc fifo_tx_full 1 0 4 70 260 NJ 260 NJ 260 1030
+preplace netloc i_RX_0_1 1 0 3 NJ 420 NJ 420 NJ
+preplace netloc uart_rx_o_DOUT 1 3 1 1070 180n
+preplace netloc uart_rx_o_RX_DONE_TICK 1 3 1 1130 200n
+preplace netloc uart_tx_1_o_TX 1 3 2 NJ 600 NJ
+preplace netloc uart_tx_o_TX_RDY_TICK 1 3 1 1030 700n
+preplace netloc util_vector_logic_0_Res 1 1 3 420 440 730 540 1090
+preplace netloc S_AXI_0_1 1 0 1 NJ 60
+levelinfo -pg 1 0 260 580 890 1310 1480
+pagesize -pg 1 -db -bbox -sgen -170 0 1570 900
+",
+   "Reduced Jogs_ScaleFactor":"0.563758",
+   "Reduced Jogs_TopLeft":"-387,4",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port S_AXI_0 -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port port-id_i_RX -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
+preplace port port-id_o_TX -pg 1 -lvl 5 -x 1360 -y 20 -defaultsOSRD
+preplace port port-id_test_RX_DONE_TICK -pg 1 -lvl 5 -x 1360 -y 410 -defaultsOSRD
+preplace port port-id_test_TX_STARTN -pg 1 -lvl 5 -x 1360 -y 340 -defaultsOSRD
+preplace port port-id_test_TX_RDY_TICK -pg 1 -lvl 5 -x 1360 -y 320 -defaultsOSRD
+preplace port port-id_S_AXI_ACLK_0 -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_S_AXI_ARESETN_0 -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace portBus test_DOUT -pg 1 -lvl 5 -x 1360 -y 390 -defaultsOSRD
+preplace portBus test_DIN -pg 1 -lvl 5 -x 1360 -y 360 -defaultsOSRD
+preplace inst uart_tx -pg 1 -lvl 3 -x 820 -y 230 -swap {0 2 4 1 3 5 6} -defaultsOSRD
+preplace inst baudrate_generator -pg 1 -lvl 2 -x 510 -y 220 -swap {0 2 1 3} -defaultsOSRD
+preplace inst fifo_tx -pg 1 -lvl 4 -x 1190 -y 170 -defaultsOSRD
+preplace inst uart_rx -pg 1 -lvl 3 -x 820 -y 480 -swap {0 2 3 1 5 4} -defaultsOSRD
+preplace inst fifo_rx -pg 1 -lvl 4 -x 1190 -y 550 -defaultsOSRD
+preplace inst axi_lite_slave_0 -pg 1 -lvl 1 -x 210 -y 210 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 21 25 23 20 22 26} -defaultsOSRD
+preplace netloc baudrate_generator_0_o_TICK 1 2 1 640 210n
+preplace netloc fifo_tx_dout 1 2 3 660 350 1040 360 NJ
+preplace netloc fifo_tx_empty 1 2 3 670 340 1000 340 NJ
+preplace netloc i_RX_0_1 1 0 3 NJ 510 NJ 510 NJ
+preplace netloc uart_rx_o_DOUT 1 3 2 1040 390 NJ
+preplace netloc uart_rx_o_RX_DONE_TICK 1 3 2 1030 410 NJ
+preplace netloc uart_tx_1_o_TX 1 3 2 970J 20 NJ
+preplace netloc uart_tx_o_TX_RDY_TICK 1 3 2 990 320 NJ
+preplace netloc S_AXI_ACLK_0_1 1 0 4 20 100 390 140 630 360 1010
+preplace netloc S_AXI_ARESETN_0_1 1 0 4 20 320 390 300 650 370 1020
+preplace netloc axi_lite_slave_0_o_DVSR 1 1 1 N 220
+preplace netloc fifo_rx_empty 1 0 4 40 380 NJ 380 NJ 380 990J
+preplace netloc fifo_rx_dout 1 0 4 30 570 NJ 570 NJ 570 NJ
+preplace netloc axi_lite_slave_0_o_RX_RDEN 1 1 3 370 390 NJ 390 970J
+preplace netloc fifo_tx_full 1 0 4 50 330 NJ 330 NJ 330 980J
+preplace netloc axi_lite_slave_0_o_TX_DATA 1 1 3 370J 120 NJ 120 N
+preplace netloc axi_lite_slave_0_o_TX_WREN 1 1 3 380J 130 NJ 130 1000
+preplace netloc S_AXI_0_1 1 0 1 NJ 160
+levelinfo -pg 1 0 210 510 820 1190 1360
+pagesize -pg 1 -db -bbox -sgen -190 0 1550 690
+"
+}
+

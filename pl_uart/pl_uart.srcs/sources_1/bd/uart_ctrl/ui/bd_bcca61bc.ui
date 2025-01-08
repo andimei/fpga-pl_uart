@@ -1,0 +1,106 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Color Coded_ExpandedHierarchyInLayout":"",
+   "Color Coded_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_i_RESET -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port port-id_i_CLK -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace port port-id_o_RX_DONE_TICK_1 -pg 1 -lvl 4 -x 910 -y 80 -defaultsOSRD
+preplace port port-id_o_TX_RDY_TICK_0 -pg 1 -lvl 4 -x 910 -y 190 -defaultsOSRD
+preplace port port-id_i_TX_STARTN_0 -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_test_line_uart -pg 1 -lvl 4 -x 910 -y 210 -defaultsOSRD
+preplace portBus i_DVSR -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace portBus o_DOUT -pg 1 -lvl 4 -x 910 -y 100 -defaultsOSRD
+preplace portBus i_DIN -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace inst uart_rx_1 -pg 1 -lvl 3 -x 740 -y 90 -defaultsOSRD
+preplace inst baudrate_generator_0 -pg 1 -lvl 1 -x 140 -y 90 -defaultsOSRD
+preplace inst uart_tx_0 -pg 1 -lvl 2 -x 430 -y 180 -defaultsOSRD
+preplace netloc i_RESET_0_1 1 0 3 20 170 270 80 N
+preplace netloc i_CLK_0_1 1 0 3 20 10 280 60 N
+preplace netloc i_DVSR_0_1 1 0 1 NJ 110
+preplace netloc baudrate_generator_0_o_TICK 1 1 2 260 280 590J
+preplace netloc uart_rx_1_o_RX_DONE_TICK 1 3 1 NJ 80
+preplace netloc uart_rx_1_o_DOUT 1 3 1 NJ 100
+preplace netloc uart_tx_0_o_TX_RDY_TICK 1 2 2 NJ 190 NJ
+preplace netloc i_TX_STARTN_0_1 1 0 2 NJ 180 NJ
+preplace netloc i_DIN_0_1 1 0 2 NJ 220 NJ
+preplace netloc uart_tx_0_o_TX 1 2 2 580 210 NJ
+levelinfo -pg 1 0 140 430 740 910
+pagesize -pg 1 -db -bbox -sgen -160 0 1110 290
+",
+   "Color Coded_ScaleFactor":"0.969121",
+   "Color Coded_TopLeft":"-161,-116",
+   "Default View_ScaleFactor":"0.994314",
+   "Default View_TopLeft":"-147,-111",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_ScaleFactor":"1.0",
+   "Grouping and No Loops_TopLeft":"-161,-88",
+   "Interfaces View_Layers":"/i_RESET_0_1:false|/i_CLK_0_1:false|",
+   "Interfaces View_ScaleFactor":"0.8",
+   "Interfaces View_TopLeft":"-265,-110",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layers":"/i_RESET_0_1:true|/i_CLK_0_1:true|",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_i_RESET -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port port-id_i_CLK -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace port port-id_o_RX_DONE_TICK -pg 1 -lvl 3 -x 620 -y 130 -defaultsOSRD
+preplace port port-id_o_TX_RDY_TICK -pg 1 -lvl 3 -x 620 -y 330 -defaultsOSRD
+preplace port port-id_i_TX_STARTN -pg 1 -lvl 0 -x 0 -y 370 -defaultsOSRD
+preplace port port-id_i_RX -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace port port-id_o_TX -pg 1 -lvl 3 -x 620 -y 310 -defaultsOSRD
+preplace port port-id_test_TICK -pg 1 -lvl 3 -x 620 -y 250 -defaultsOSRD
+preplace portBus i_DVSR -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace portBus o_DOUT -pg 1 -lvl 3 -x 620 -y 150 -defaultsOSRD
+preplace portBus i_DIN -pg 1 -lvl 0 -x 0 -y 390 -defaultsOSRD
+preplace inst uart_rx -pg 1 -lvl 2 -x 450 -y 110 -swap {0 3 2 1 4 5} -defaultsOSRD -pinDir i_CLK left -pinY i_CLK 20L -pinDir i_RESET left -pinY i_RESET 80L -pinDir i_RX left -pinY i_RX 60L -pinDir i_S_TICK left -pinY i_S_TICK 40L -pinDir o_RX_DONE_TICK right -pinY o_RX_DONE_TICK 20R -pinBusDir o_DOUT right -pinBusY o_DOUT 40R
+preplace inst baudrate_generator -pg 1 -lvl 1 -x 140 -y 50 -defaultsOSRD -pinDir i_CLK left -pinY i_CLK 20L -pinDir i_RESET left -pinY i_RESET 40L -pinBusDir i_DVSR left -pinBusY i_DVSR 60L -pinDir o_TICK right -pinY o_TICK 60R
+preplace inst uart_tx -pg 1 -lvl 2 -x 450 -y 290 -swap {0 2 3 1 4 5 6} -defaultsOSRD -pinDir i_CLK left -pinY i_CLK 20L -pinDir i_RESET left -pinY i_RESET 60L -pinDir i_TX_STARTN left -pinY i_TX_STARTN 80L -pinDir i_S_TICK left -pinY i_S_TICK 40L -pinBusDir i_DIN left -pinBusY i_DIN 100L -pinDir o_TX right -pinY o_TX 20R -pinDir o_TX_RDY_TICK right -pinY o_TX_RDY_TICK 40R
+preplace netloc baudrate_generator_o_TICK 1 1 2 260 250 NJ
+preplace netloc i_CLK_0_1 1 0 2 20 10 300
+preplace netloc i_DIN_0_1 1 0 2 NJ 390 NJ
+preplace netloc i_DVSR_0_1 1 0 1 NJ 110
+preplace netloc i_RESET_0_1 1 0 2 20 190 280
+preplace netloc i_RX_0_1 1 0 2 NJ 170 NJ
+preplace netloc i_TX_STARTN_0_1 1 0 2 NJ 370 NJ
+preplace netloc uart_rx_1_o_DOUT 1 2 1 NJ 150
+preplace netloc uart_rx_1_o_RX_DONE_TICK 1 2 1 NJ 130
+preplace netloc uart_tx_0_o_TX_RDY_TICK 1 2 1 NJ 330
+preplace netloc uart_tx_o_TX 1 2 1 NJ 310
+levelinfo -pg 1 0 140 450 620
+pagesize -pg 1 -db -bbox -sgen -150 0 800 450
+",
+   "No Loops_ScaleFactor":"1.0",
+   "No Loops_TopLeft":"-286,-15",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_i_RESET -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port port-id_i_CLK -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace port port-id_o_RX_DONE_TICK -pg 1 -lvl 4 -x 910 -y 80 -defaultsOSRD
+preplace port port-id_o_TX_RDY_TICK -pg 1 -lvl 4 -x 910 -y 190 -defaultsOSRD
+preplace port port-id_i_TX_STARTN -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_test_line_uart -pg 1 -lvl 4 -x 910 -y 210 -defaultsOSRD
+preplace portBus i_DVSR -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace portBus o_DOUT -pg 1 -lvl 4 -x 910 -y 100 -defaultsOSRD
+preplace portBus i_DIN -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace inst uart_rx -pg 1 -lvl 3 -x 740 -y 90 -defaultsOSRD
+preplace inst baudrate_generator_0 -pg 1 -lvl 1 -x 140 -y 90 -defaultsOSRD
+preplace inst uart_tx -pg 1 -lvl 2 -x 430 -y 180 -defaultsOSRD
+preplace netloc i_RESET_0_1 1 0 3 20 170 260 70 590
+preplace netloc i_CLK_0_1 1 0 3 20 10 270 60 N
+preplace netloc i_DVSR_0_1 1 0 1 NJ 110
+preplace netloc baudrate_generator_0_o_TICK 1 1 2 280 80 580J
+preplace netloc uart_rx_1_o_RX_DONE_TICK 1 3 1 NJ 80
+preplace netloc uart_rx_1_o_DOUT 1 3 1 NJ 100
+preplace netloc uart_tx_0_o_TX_RDY_TICK 1 2 2 NJ 190 NJ
+preplace netloc i_TX_STARTN_0_1 1 0 2 NJ 180 NJ
+preplace netloc i_DIN_0_1 1 0 2 NJ 220 NJ
+preplace netloc uart_tx_0_o_TX 1 2 2 590 210 NJ
+levelinfo -pg 1 0 140 430 740 910
+pagesize -pg 1 -db -bbox -sgen -160 0 1110 290
+"
+}
+0

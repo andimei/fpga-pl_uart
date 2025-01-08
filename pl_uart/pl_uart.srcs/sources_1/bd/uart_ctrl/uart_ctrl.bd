@@ -1,0 +1,284 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x67E7DEEBE9411108",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../pl_uart.gen/sources_1/bd/uart_ctrl",
+      "name": "uart_ctrl",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2"
+    },
+    "design_tree": {
+      "uart_rx": "",
+      "baudrate_generator": "",
+      "uart_tx": ""
+    },
+    "ports": {
+      "i_RESET": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "i_CLK": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "i_DVSR": {
+        "direction": "I",
+        "left": "10",
+        "right": "0"
+      },
+      "o_RX_DONE_TICK": {
+        "direction": "O"
+      },
+      "o_DOUT": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "o_TX_RDY_TICK": {
+        "direction": "O"
+      },
+      "i_TX_STARTN": {
+        "direction": "I"
+      },
+      "i_DIN": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "i_RX": {
+        "direction": "I"
+      },
+      "o_TX": {
+        "direction": "O"
+      },
+      "test_TICK": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "uart_rx": {
+        "vlnv": "xilinx.com:module_ref:uart_rx:1.0",
+        "ip_revision": "1",
+        "xci_name": "uart_ctrl_uart_rx_1_0",
+        "xci_path": "ip\\uart_ctrl_uart_rx_1_0\\uart_ctrl_uart_rx_1_0.xci",
+        "inst_hier_path": "uart_rx",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "uart_rx",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_RESET",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "uart_ctrl_i_CLK_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "i_RESET": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH"
+              }
+            }
+          },
+          "i_RX": {
+            "direction": "I"
+          },
+          "i_S_TICK": {
+            "direction": "I"
+          },
+          "o_RX_DONE_TICK": {
+            "direction": "O"
+          },
+          "o_DOUT": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "baudrate_generator": {
+        "vlnv": "xilinx.com:module_ref:baudrate_generator:1.0",
+        "ip_revision": "1",
+        "xci_name": "uart_ctrl_baudrate_generator_0_0",
+        "xci_path": "ip\\uart_ctrl_baudrate_generator_0_0\\uart_ctrl_baudrate_generator_0_0.xci",
+        "inst_hier_path": "baudrate_generator",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "baudrate_generator",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_RESET",
+                "value_src": "constant"
+              }
+            }
+          },
+          "i_RESET": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH"
+              }
+            }
+          },
+          "i_DVSR": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "o_TICK": {
+            "direction": "O"
+          }
+        }
+      },
+      "uart_tx": {
+        "vlnv": "xilinx.com:module_ref:uart_tx:1.0",
+        "ip_revision": "1",
+        "xci_name": "uart_ctrl_uart_tx_0_0",
+        "xci_path": "ip\\uart_ctrl_uart_tx_0_0\\uart_ctrl_uart_tx_0_0.xci",
+        "inst_hier_path": "uart_tx",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "uart_tx",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_RESET",
+                "value_src": "constant"
+              }
+            }
+          },
+          "i_RESET": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH"
+              }
+            }
+          },
+          "i_TX_STARTN": {
+            "direction": "I"
+          },
+          "i_S_TICK": {
+            "direction": "I"
+          },
+          "i_DIN": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "o_TX": {
+            "direction": "O"
+          },
+          "o_TX_RDY_TICK": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "baudrate_generator_o_TICK": {
+        "ports": [
+          "baudrate_generator/o_TICK",
+          "test_TICK",
+          "uart_rx/i_S_TICK",
+          "uart_tx/i_S_TICK"
+        ]
+      },
+      "i_CLK_0_1": {
+        "ports": [
+          "i_CLK",
+          "uart_rx/i_CLK",
+          "uart_tx/i_CLK",
+          "baudrate_generator/i_CLK"
+        ]
+      },
+      "i_DIN_0_1": {
+        "ports": [
+          "i_DIN",
+          "uart_tx/i_DIN"
+        ]
+      },
+      "i_DVSR_0_1": {
+        "ports": [
+          "i_DVSR",
+          "baudrate_generator/i_DVSR"
+        ]
+      },
+      "i_RESET_0_1": {
+        "ports": [
+          "i_RESET",
+          "uart_rx/i_RESET",
+          "uart_tx/i_RESET",
+          "baudrate_generator/i_RESET"
+        ]
+      },
+      "i_RX_0_1": {
+        "ports": [
+          "i_RX",
+          "uart_rx/i_RX"
+        ]
+      },
+      "i_TX_STARTN_0_1": {
+        "ports": [
+          "i_TX_STARTN",
+          "uart_tx/i_TX_STARTN"
+        ]
+      },
+      "uart_rx_1_o_DOUT": {
+        "ports": [
+          "uart_rx/o_DOUT",
+          "o_DOUT"
+        ]
+      },
+      "uart_rx_1_o_RX_DONE_TICK": {
+        "ports": [
+          "uart_rx/o_RX_DONE_TICK",
+          "o_RX_DONE_TICK"
+        ]
+      },
+      "uart_tx_0_o_TX_RDY_TICK": {
+        "ports": [
+          "uart_tx/o_TX_RDY_TICK",
+          "o_TX_RDY_TICK"
+        ]
+      },
+      "uart_tx_o_TX": {
+        "ports": [
+          "uart_tx/o_TX",
+          "o_TX"
+        ]
+      }
+    }
+  }
+}

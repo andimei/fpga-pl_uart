@@ -1,0 +1,46 @@
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 1024
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 1024
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Stopped at time : 400 ns : File "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.srcs/sim_1/new/tb_uart_fifo_axi.v" Line 207
+Note: Actual FIFO Depth = 1024
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 1024
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Stopped at time : 400 ns : File "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.srcs/sim_1/new/tb_uart_fifo_axi.v" Line 207
+Note: Actual FIFO Depth = 1024
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 1024
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+$stop called at time : 168740 ns : File "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.srcs/sim_1/new/tb_uart_fifo_axi.v" Line 220
+Note: Actual FIFO Depth = 1024
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 1024
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+$stop called at time : 168740 ns : File "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.srcs/sim_1/new/tb_uart_fifo_axi.v" Line 220
+Note: Actual FIFO Depth = 1024
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 1024
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 1024 WIDTH = 18 C_RD_PRIM_WIDTH = 18 C_RD_PRIM_DEPTH = 1024 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+$stop called at time : 168740 ns : File "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.srcs/sim_1/new/tb_uart_fifo_axi.v" Line 220

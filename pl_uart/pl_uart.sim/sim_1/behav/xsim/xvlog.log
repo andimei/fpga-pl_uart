@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.srcs/sources_1/new/baudrate_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baudrate_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.srcs/sources_1/new/axi_lite_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_lite_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.ip_user_files/bd/uart_fifo_axi/ip/uart_fifo_axi_uart_tx_0/sim/uart_fifo_axi_uart_tx_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_fifo_axi_uart_tx_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.ip_user_files/bd/uart_fifo_axi/ip/uart_fifo_axi_baudrate_generator_0/sim/uart_fifo_axi_baudrate_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_fifo_axi_baudrate_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.ip_user_files/bd/uart_fifo_axi/ip/uart_fifo_axi_fifo_tx_0/sim/uart_fifo_axi_fifo_tx_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_fifo_axi_fifo_tx_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.ip_user_files/bd/uart_fifo_axi/ip/uart_fifo_axi_uart_rx_0/sim/uart_fifo_axi_uart_rx_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_fifo_axi_uart_rx_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.ip_user_files/bd/uart_fifo_axi/ip/uart_fifo_axi_fifo_rx_0/sim/uart_fifo_axi_fifo_rx_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_fifo_axi_fifo_rx_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.ip_user_files/bd/uart_fifo_axi/ip/uart_fifo_axi_axi_lite_slave_0_0/sim/uart_fifo_axi_axi_lite_slave_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_fifo_axi_axi_lite_slave_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.ip_user_files/bd/uart_fifo_axi/ip/uart_fifo_axi_util_vector_logic_0_0/sim/uart_fifo_axi_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_fifo_axi_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.ip_user_files/bd/uart_fifo_axi/sim/uart_fifo_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_fifo_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/fpga-pl_uart/pl_uart/pl_uart.srcs/sim_1/new/tb_uart_fifo_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_uart_fifo_axi

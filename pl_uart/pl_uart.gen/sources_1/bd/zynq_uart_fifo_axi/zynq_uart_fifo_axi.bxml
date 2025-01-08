@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="43">
+  <CompositeFile CompositeFileTopName="zynq_uart_fifo_axi" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1736242127"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1736242127"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1736242127"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1736242127"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="synth\zynq_uart_fifo_axi.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="sim\zynq_uart_fifo_axi.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="zynq_uart_fifo_axi_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="hw_handoff\zynq_uart_fifo_axi.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="zynq_uart_fifo_axi.bda">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="synth\zynq_uart_fifo_axi.hwdef">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="sim\zynq_uart_fifo_axi.protoinst">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+    </FileCollection>
+    <BlockContainerCollection>
+      <BlockContainer InstPath="/uart_fifo_axi_hw_0" IsPR="false" State="Generated">
+        <ActiveVariantSynth FileName="bd\uart_fifo_axi_hw_inst_1\uart_fifo_axi_hw_inst_1.bd"/>
+        <ActiveVariantSim FileName="bd\uart_fifo_axi_hw_inst_1\uart_fifo_axi_hw_inst_1.bd"/>
+        <VariantsCollection>
+          <BDFile BDFilePath="bd\uart_fifo_axi_hw_inst_1\uart_fifo_axi_hw_inst_1.bd" BDFileset="uart_fifo_axi_hw_inst_1" BDSourceFile="..\..\..\..\pl_uart.srcs\sources_1\bd\uart_fifo_axi_hw\uart_fifo_axi_hw.bd" BDSourceFileset="sources_1" BDVariantType="ALL"/>
+        </VariantsCollection>
+      </BlockContainer>
+    </BlockContainerCollection>
+    <ReferenceCollection>
+      <ModuleReference TargetName="uart_fifo_axi_hw" Type="Block Design" SubInstancePath="zynq_uart_fifo_axi_uart_fifo_axi_hw_0">
+        <TopFile Name="..\..\..\..\pl_uart.srcs\sources_1\bd\uart_fifo_axi_hw\uart_fifo_axi_hw.bd"/>
+        <FileCollection>
+          <File Name="..\..\..\..\pl_uart.srcs\sources_1\new\uart_tx.v"/>
+          <File Name="..\..\..\..\pl_uart.srcs\sources_1\new\baudrate_generator.v"/>
+          <File Name="..\..\..\..\pl_uart.srcs\sources_1\new\uart_rx.v"/>
+          <File Name="..\..\..\..\pl_uart.srcs\sources_1\new\axi_lite_slave.v"/>
+          <File Name="..\..\..\..\pl_uart.srcs\sources_1\bd\uart_fifo_axi_hw\uart_fifo_axi_hw.bd"/>
+        </FileCollection>
+      </ModuleReference>
+    </ReferenceCollection>
+  </CompositeFile>
+</Root>

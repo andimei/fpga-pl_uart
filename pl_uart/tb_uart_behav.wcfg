@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_uart_fifo_axi_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_uart_fifo_axi" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="82,070.500 ns"></ZoomStartTime>
+      <ZoomEndTime time="82,442.001 ns"></ZoomEndTime>
+      <Cursor1Time time="82,630.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="200"></NameColumnWidth>
+      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/tb_uart_fifo_axi/S_AXI_ACLK" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ACLK</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ACLK</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_fifo_axi/S_AXI_ARESETN" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARESETN</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_fifo_axi/S_AXI_araddr" type="array">
+      <obj_property name="ElementShortName">S_AXI_araddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_araddr[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_fifo_axi/S_AXI_arvalid" type="logic">
+      <obj_property name="ElementShortName">S_AXI_arvalid</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_arvalid</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_fifo_axi/S_AXI_arready" type="logic">
+      <obj_property name="ElementShortName">S_AXI_arready</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_arready</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_fifo_axi/S_AXI_rdata" type="array">
+      <obj_property name="ElementShortName">S_AXI_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_rdata[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_fifo_axi/S_AXI_rvalid" type="logic">
+      <obj_property name="ElementShortName">S_AXI_rvalid</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_rvalid</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_fifo_axi/S_AXI_rready" type="logic">
+      <obj_property name="ElementShortName">S_AXI_rready</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_rready</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_fifo_axi/S_AXI_bresp" type="array">
+      <obj_property name="ElementShortName">S_AXI_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_bresp[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_fifo_axi/test_RX_DATA" type="array">
+      <obj_property name="ElementShortName">test_RX_DATA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">test_RX_DATA[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_fifo_axi/test_RX_EMPTY" type="logic">
+      <obj_property name="ElementShortName">test_RX_EMPTY</obj_property>
+      <obj_property name="ObjectShortName">test_RX_EMPTY</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart_fifo_axi/test_RX_RDEN" type="logic">
+      <obj_property name="ElementShortName">test_RX_RDEN</obj_property>
+      <obj_property name="ObjectShortName">test_RX_RDEN</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

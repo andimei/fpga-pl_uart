@@ -1,0 +1,52 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L util_vector_logic_v2_0_3 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_uart_fifo_axi_behav xil_defaultlib.tb_uart_fifo_axi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_9.fifo_generator_v13_2_9_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.axi_lite_slave_default
+Compiling module xil_defaultlib.uart_fifo_axi_axi_lite_slave_0_0
+Compiling module xil_defaultlib.baudrate_generator
+Compiling module xil_defaultlib.uart_fifo_axi_baudrate_generator...
+Compiling architecture amd of entity fifo_generator_v13_2_9.reset_builtin [\reset_builtin(c_has_int_clk=0)\]
+Compiling architecture ff18_internal_vhdl_v of entity unisim.FF18_INTERNAL_VHDL [\FF18_INTERNAL_VHDL(almost_full_...]
+Compiling architecture fifo18e1_v of entity unisim.FIFO18E1 [\FIFO18E1(almost_full_offset="00...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_prim_v6 [\builtin_prim_v6(c_family="7SERI...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_extdepth_v6 [\builtin_extdepth_v6(c_family="7...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_top_v6 [\builtin_top_v6(c_family="7SERIE...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.input_blk [\input_blk(c_rd_pntr_width=10,c_...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.output_blk [\output_blk(c_byte_strb_width=8)...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_builtin [\fifo_generator_v13_2_9_builtin(...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_synth [\fifo_generator_v13_2_9_synth(c_...]
+Compiling module xil_defaultlib.uart_fifo_axi_fifo_rx_0
+Compiling module xil_defaultlib.uart_fifo_axi_fifo_tx_0
+Compiling module util_vector_logic_v2_0_3.util_vector_logic_v2_0_3_util_ve...
+Compiling module xil_defaultlib.uart_fifo_axi_util_vector_logic_...
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.uart_fifo_axi_uart_rx_0
+Compiling module xil_defaultlib.uart_tx
+Compiling module xil_defaultlib.uart_fifo_axi_uart_tx_0
+Compiling module xil_defaultlib.uart_fifo_axi
+Compiling module xil_defaultlib.tb_uart_fifo_axi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_uart_fifo_axi_behav

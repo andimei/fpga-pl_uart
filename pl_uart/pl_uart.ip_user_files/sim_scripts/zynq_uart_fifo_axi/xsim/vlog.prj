@@ -1,0 +1,17 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../pl_uart.gen/sources_1/bd/zynq_uart_fifo_axi/ipshared/ec67/hdl" --include "../../../../pl_uart.gen/sources_1/bd/zynq_uart_fifo_axi/ipshared/6b2b/hdl" \
+"../../../bd/uart_fifo_axi_hw_inst_1/sim/uart_fifo_axi_hw_inst_1.v" \
+"../../../bd/uart_fifo_axi_hw_inst_1/ip/uart_fifo_axi_hw_inst_1_uart_tx_0/sim/uart_fifo_axi_hw_inst_1_uart_tx_0.v" \
+"../../../bd/uart_fifo_axi_hw_inst_1/ip/uart_fifo_axi_hw_inst_1_baudrate_generator_0/sim/uart_fifo_axi_hw_inst_1_baudrate_generator_0.v" \
+"../../../bd/uart_fifo_axi_hw_inst_1/ip/uart_fifo_axi_hw_inst_1_fifo_tx_0/sim/uart_fifo_axi_hw_inst_1_fifo_tx_0.v" \
+"../../../bd/uart_fifo_axi_hw_inst_1/ip/uart_fifo_axi_hw_inst_1_uart_rx_0/sim/uart_fifo_axi_hw_inst_1_uart_rx_0.v" \
+"../../../bd/uart_fifo_axi_hw_inst_1/ip/uart_fifo_axi_hw_inst_1_fifo_rx_0/sim/uart_fifo_axi_hw_inst_1_fifo_rx_0.v" \
+"../../../bd/uart_fifo_axi_hw_inst_1/ip/uart_fifo_axi_hw_inst_1_axi_lite_slave_0/sim/uart_fifo_axi_hw_inst_1_axi_lite_slave_0.v" \
+"../../../bd/uart_fifo_axi_hw_inst_1/ip/uart_fifo_axi_hw_inst_1_not_rst_0/sim/uart_fifo_axi_hw_inst_1_not_rst_0.v" \
+"../../../bd/zynq_uart_fifo_axi/ip/zynq_uart_fifo_axi_processing_system7_0_0/sim/zynq_uart_fifo_axi_processing_system7_0_0.v" \
+"../../../bd/zynq_uart_fifo_axi/sim/zynq_uart_fifo_axi.v" \
+"../../../bd/zynq_uart_fifo_axi/ip/zynq_uart_fifo_axi_auto_pc_0/sim/zynq_uart_fifo_axi_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

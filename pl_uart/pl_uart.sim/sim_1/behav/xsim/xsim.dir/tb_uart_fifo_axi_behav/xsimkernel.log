@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_uart_fifo_axi_behav/xsimk.exe -simmode gui -wdb tb_uart_fifo_axi_behav.wdb -simrunnum 0 -socket 50513
+Design successfully loaded
+Design Loading Memory Usage: 8104 KB (Peak: 8104 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 17256 KB (Peak: 17256 KB)
+Simulation CPU Usage: 1999 ms

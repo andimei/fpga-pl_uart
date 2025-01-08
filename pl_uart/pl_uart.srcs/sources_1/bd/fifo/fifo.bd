@@ -1,0 +1,143 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x4E344557DF775A4E",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../pl_uart.gen/sources_1/bd/fifo",
+      "name": "fifo",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "fifo_generator": ""
+    },
+    "interface_ports": {
+      "FIFO_READ": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:fifo_read:1.0",
+        "vlnv": "xilinx.com:interface:fifo_read_rtl:1.0",
+        "port_maps": {
+          "EMPTY": {
+            "physical_name": "FIFO_READ_empty",
+            "direction": "O"
+          },
+          "RD_DATA": {
+            "physical_name": "FIFO_READ_rd_data",
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "RD_EN": {
+            "physical_name": "FIFO_READ_rd_en",
+            "direction": "I"
+          }
+        }
+      },
+      "FIFO_WRITE": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:fifo_write:1.0",
+        "vlnv": "xilinx.com:interface:fifo_write_rtl:1.0",
+        "port_maps": {
+          "FULL": {
+            "physical_name": "FIFO_WRITE_full",
+            "direction": "O"
+          },
+          "WR_DATA": {
+            "physical_name": "FIFO_WRITE_wr_data",
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "WR_EN": {
+            "physical_name": "FIFO_WRITE_wr_en",
+            "direction": "I"
+          }
+        }
+      }
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "fifo_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "fifo_generator": {
+        "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+        "ip_revision": "9",
+        "xci_name": "fifo_fifo_generator_0_0",
+        "xci_path": "ip\\fifo_fifo_generator_0_0\\fifo_fifo_generator_0_0.xci",
+        "inst_hier_path": "fifo_generator",
+        "parameters": {
+          "Fifo_Implementation": {
+            "value": "Common_Clock_Builtin_FIFO"
+          },
+          "INTERFACE_TYPE": {
+            "value": "Native"
+          },
+          "Input_Data_Width": {
+            "value": "8"
+          },
+          "Input_Depth": {
+            "value": "512"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "FIFO_READ_0_1": {
+        "interface_ports": [
+          "FIFO_READ",
+          "fifo_generator/FIFO_READ"
+        ]
+      },
+      "FIFO_WRITE_0_1": {
+        "interface_ports": [
+          "FIFO_WRITE",
+          "fifo_generator/FIFO_WRITE"
+        ]
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "fifo_generator/clk"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst",
+          "fifo_generator/rst"
+        ]
+      }
+    }
+  }
+}

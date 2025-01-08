@@ -1,0 +1,507 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xAB8BD3172928135E",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../pl_uart.gen/sources_1/bd/design_uart",
+      "name": "design_uart",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "baudrate_generator": "",
+      "uart_tx_0": "",
+      "fifo_uart_tx": "",
+      "util_vector_logic_0": "",
+      "fifo_uart_rx": "",
+      "uart_rx_0": ""
+    },
+    "ports": {
+      "i_CLK": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "i_RESETN_0:i_RESETN",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_uart_i_CLK_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "i_RESETN": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "i_DVSR": {
+        "direction": "I",
+        "left": "10",
+        "right": "0"
+      },
+      "o_test_rd_en": {
+        "direction": "O"
+      },
+      "o_TX": {
+        "direction": "O"
+      },
+      "o_test_baud_tick": {
+        "direction": "O"
+      },
+      "o_TX_FULL": {
+        "direction": "O"
+      },
+      "i_TX_WR_EN": {
+        "direction": "I"
+      },
+      "o_test_empty": {
+        "direction": "O",
+        "parameters": {
+          "PortType": {
+            "value": "undef",
+            "value_src": "ip_prop"
+          },
+          "PortType.PROP_SRC": {
+            "value": "false",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "o_test_dout": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "i_TX_DATA": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "i_RX": {
+        "direction": "I"
+      },
+      "o_RX_FULL": {
+        "direction": "O"
+      },
+      "o_RX_EMPTY": {
+        "direction": "O"
+      },
+      "o_RX_DATA": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "i_RX_RD_EN": {
+        "direction": "I"
+      },
+      "o_test_rx_wr_en": {
+        "direction": "O"
+      },
+      "o_test_rx_dout": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "baudrate_generator": {
+        "vlnv": "xilinx.com:module_ref:baudrate_generator:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_uart_baudrate_generator_0_0",
+        "xci_path": "ip\\design_uart_baudrate_generator_0_0\\design_uart_baudrate_generator_0_0.xci",
+        "inst_hier_path": "baudrate_generator",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "baudrate_generator",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_RESET",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_uart_i_CLK_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "i_RESET": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_DVSR": {
+            "direction": "I",
+            "left": "10",
+            "right": "0"
+          },
+          "o_TICK": {
+            "direction": "O"
+          }
+        }
+      },
+      "uart_tx_0": {
+        "vlnv": "xilinx.com:module_ref:uart_tx:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_uart_uart_tx_0_0",
+        "xci_path": "ip\\design_uart_uart_tx_0_0\\design_uart_uart_tx_0_0.xci",
+        "inst_hier_path": "uart_tx_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "uart_tx",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_RESET",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_uart_i_CLK_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "i_RESET": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_TX_STARTN": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_S_TICK": {
+            "direction": "I"
+          },
+          "i_DIN": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "o_TX": {
+            "direction": "O"
+          },
+          "o_TX_RDY_TICK": {
+            "direction": "O"
+          }
+        }
+      },
+      "fifo_uart_tx": {
+        "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+        "ip_revision": "9",
+        "xci_name": "design_uart_fifo_generator_0_0",
+        "xci_path": "ip\\design_uart_fifo_generator_0_0\\design_uart_fifo_generator_0_0.xci",
+        "inst_hier_path": "fifo_uart_tx",
+        "parameters": {
+          "Fifo_Implementation": {
+            "value": "Common_Clock_Builtin_FIFO"
+          },
+          "INTERFACE_TYPE": {
+            "value": "Native"
+          },
+          "Input_Data_Width": {
+            "value": "8"
+          },
+          "Input_Depth": {
+            "value": "512"
+          },
+          "Performance_Options": {
+            "value": "Standard_FIFO"
+          },
+          "Use_Embedded_Registers": {
+            "value": "false"
+          },
+          "Write_Acknowledge_Flag": {
+            "value": "false"
+          }
+        }
+      },
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "3",
+        "xci_name": "design_uart_util_vector_logic_0_0",
+        "xci_path": "ip\\design_uart_util_vector_logic_0_0\\design_uart_util_vector_logic_0_0.xci",
+        "inst_hier_path": "util_vector_logic_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "fifo_uart_rx": {
+        "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+        "ip_revision": "9",
+        "xci_name": "design_uart_fifo_uart_tx_0",
+        "xci_path": "ip\\design_uart_fifo_uart_tx_0\\design_uart_fifo_uart_tx_0.xci",
+        "inst_hier_path": "fifo_uart_rx",
+        "parameters": {
+          "Fifo_Implementation": {
+            "value": "Common_Clock_Builtin_FIFO"
+          },
+          "INTERFACE_TYPE": {
+            "value": "Native"
+          },
+          "Input_Data_Width": {
+            "value": "8"
+          },
+          "Input_Depth": {
+            "value": "512"
+          },
+          "Performance_Options": {
+            "value": "Standard_FIFO"
+          },
+          "Use_Embedded_Registers": {
+            "value": "false"
+          },
+          "Write_Acknowledge_Flag": {
+            "value": "false"
+          }
+        }
+      },
+      "uart_rx_0": {
+        "vlnv": "xilinx.com:module_ref:uart_rx:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_uart_uart_rx_0_2",
+        "xci_path": "ip\\design_uart_uart_rx_0_2\\design_uart_uart_rx_0_2.xci",
+        "inst_hier_path": "uart_rx_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "uart_rx",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_RESET",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_uart_i_CLK_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "i_RESET": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_RX": {
+            "direction": "I"
+          },
+          "i_S_TICK": {
+            "direction": "I"
+          },
+          "o_RX_DONE_TICK": {
+            "direction": "O"
+          },
+          "o_DOUT": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "baudrate_generator_0_o_TICK": {
+        "ports": [
+          "baudrate_generator/o_TICK",
+          "o_test_baud_tick",
+          "uart_rx_0/i_S_TICK",
+          "uart_tx_0/i_S_TICK"
+        ]
+      },
+      "din_0_1": {
+        "ports": [
+          "i_TX_DATA",
+          "fifo_uart_tx/din"
+        ]
+      },
+      "fifo_generator_0_dout": {
+        "ports": [
+          "fifo_uart_tx/dout",
+          "o_test_dout",
+          "uart_tx_0/i_DIN"
+        ]
+      },
+      "fifo_generator_0_full": {
+        "ports": [
+          "fifo_uart_tx/full",
+          "o_TX_FULL"
+        ]
+      },
+      "fifo_uart_rx_dout": {
+        "ports": [
+          "fifo_uart_rx/dout",
+          "o_RX_DATA"
+        ]
+      },
+      "fifo_uart_rx_empty": {
+        "ports": [
+          "fifo_uart_rx/empty",
+          "o_RX_EMPTY"
+        ]
+      },
+      "fifo_uart_rx_full": {
+        "ports": [
+          "fifo_uart_rx/full",
+          "o_RX_FULL"
+        ]
+      },
+      "fifo_uart_tx_empty": {
+        "ports": [
+          "fifo_uart_tx/empty",
+          "o_test_empty",
+          "uart_tx_0/i_TX_STARTN"
+        ]
+      },
+      "i_CLK_0_1": {
+        "ports": [
+          "i_CLK",
+          "fifo_uart_tx/clk",
+          "baudrate_generator/i_CLK",
+          "fifo_uart_rx/clk",
+          "uart_rx_0/i_CLK",
+          "uart_tx_0/i_CLK"
+        ]
+      },
+      "i_DVSR_0_1": {
+        "ports": [
+          "i_DVSR",
+          "baudrate_generator/i_DVSR"
+        ]
+      },
+      "i_RESETN_1": {
+        "ports": [
+          "i_RESETN",
+          "util_vector_logic_0/Op1"
+        ]
+      },
+      "i_RX_0_1": {
+        "ports": [
+          "i_RX",
+          "uart_rx_0/i_RX"
+        ]
+      },
+      "rd_en_0_1": {
+        "ports": [
+          "i_RX_RD_EN",
+          "fifo_uart_rx/rd_en"
+        ]
+      },
+      "uart_rx_0_o_DOUT": {
+        "ports": [
+          "uart_rx_0/o_DOUT",
+          "o_test_rx_dout",
+          "fifo_uart_rx/din"
+        ]
+      },
+      "uart_rx_0_o_RX_DONE_TICK": {
+        "ports": [
+          "uart_rx_0/o_RX_DONE_TICK",
+          "fifo_uart_rx/wr_en",
+          "o_test_rx_wr_en"
+        ]
+      },
+      "uart_tx_0_o_TX": {
+        "ports": [
+          "uart_tx_0/o_TX",
+          "o_TX"
+        ]
+      },
+      "uart_tx_0_o_TX_DONE_TICK": {
+        "ports": [
+          "uart_tx_0/o_TX_RDY_TICK",
+          "o_test_rd_en",
+          "fifo_uart_tx/rd_en"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "fifo_uart_tx/rst",
+          "baudrate_generator/i_RESET",
+          "fifo_uart_rx/rst",
+          "uart_rx_0/i_RESET",
+          "uart_tx_0/i_RESET"
+        ]
+      },
+      "wr_en_0_1": {
+        "ports": [
+          "i_TX_WR_EN",
+          "fifo_uart_tx/wr_en"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../pl_uart.gen/sources_1/bd/zynq_uart_fifo_axi/ipshared/ec67/hdl" --include "../../../../pl_uart.gen/sources_1/bd/zynq_uart_fifo_axi/ipshared/6b2b/hdl" --include "C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+"../../../../pl_uart.srcs/sources_1/new/uart_tx.v" \
+"../../../../pl_uart.srcs/sources_1/new/baudrate_generator.v" \
+"../../../../pl_uart.srcs/sources_1/new/uart_rx.v" \
+"../../../../pl_uart.srcs/sources_1/new/axi_lite_slave.v" \
+"../../../../pl_uart.ip_user_files/bd/uart_fifo_axi/ip/uart_fifo_axi_uart_tx_0/sim/uart_fifo_axi_uart_tx_0.v" \
+"../../../../pl_uart.ip_user_files/bd/uart_fifo_axi/ip/uart_fifo_axi_baudrate_generator_0/sim/uart_fifo_axi_baudrate_generator_0.v" \
+"../../../../pl_uart.ip_user_files/bd/uart_fifo_axi/ip/uart_fifo_axi_fifo_tx_0/sim/uart_fifo_axi_fifo_tx_0.v" \
+"../../../../pl_uart.ip_user_files/bd/uart_fifo_axi/ip/uart_fifo_axi_uart_rx_0/sim/uart_fifo_axi_uart_rx_0.v" \
+"../../../../pl_uart.ip_user_files/bd/uart_fifo_axi/ip/uart_fifo_axi_fifo_rx_0/sim/uart_fifo_axi_fifo_rx_0.v" \
+"../../../../pl_uart.ip_user_files/bd/uart_fifo_axi/ip/uart_fifo_axi_axi_lite_slave_0_0/sim/uart_fifo_axi_axi_lite_slave_0_0.v" \
+"../../../../pl_uart.ip_user_files/bd/uart_fifo_axi/ip/uart_fifo_axi_util_vector_logic_0_0/sim/uart_fifo_axi_util_vector_logic_0_0.v" \
+"../../../../pl_uart.ip_user_files/bd/uart_fifo_axi/sim/uart_fifo_axi.v" \
+"../../../../pl_uart.srcs/sim_1/new/tb_uart_fifo_axi.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
