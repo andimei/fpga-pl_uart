@@ -1,0 +1,88 @@
+# Vivado auto-generated and temporary files
+*.jou
+*.log
+*.str
+*.backup*
+*.wdb
+*.pb
+*.xml
+*.xmsgs
+*.xpr
+*.lck
+*.bxml
+
+# Simulation files
+*.sim
+*.wcfg
+*.fpg
+*.vcd
+*.dmp
+xsim.dir/
+
+# Synthesis and Implementation
+*.bit
+*.bin
+*.prm
+*.rbt
+*.tcl
+*.xise
+*.runs/
+*.ip_user_files/
+*.hw/
+*.sdk/
+
+# Vivado-specific directories
+*.ip_user_files/
+*.webtalk/
+*.srcs/
+*.cache/
+*.xsa
+*.platforms/
+
+# Other temporary files
+*.temp/
+*.tmp/
+
+# Vitis workspace files
+*.log
+*.jou
+*.lck
+*.pb
+*.str
+*.mk
+
+# Vitis auto-generated files
+*.elf
+*.bin
+*.bit
+*.sysdef
+*.sysmem
+*.bif
+*.xml
+*.dmp
+
+# Debug and temporary files
+*.fdb
+*.fpg
+*.sdk/
+*.project
+*.debug/
+*.settings/
+*.metadata/
+
+# Hardware platform and export files
+*.hw_platform/
+*.export/
+*.sdk/
+
+# Simulation files
+*.sim
+xsim.dir/
+*.wcfg
+*.vcd
+
+# Build outputs
+Debug/
+Release/
+build/
+
