@@ -12,18 +12,12 @@
 
 Dokumen ini menjelaskan rancangan blok desain UART dengan komponen utama sebagai berikut:
 
-1. **`uart_tx.v`**  
-   Bertindak sebagai pengontrol UART untuk transmisi data (UART TX controller).
-2. **`uart_rx.v`**  
-   Bertindak sebagai pengontrol UART untuk penerimaan data (UART RX controller).
-3. **`baudrate_generator.v`**  
-   Bertindak sebagai pencacah clock, di mana setiap 16 tick adalah periode setiap bit baudrate.
-4. **`fifo_uart_tx`**  
-   Buffer UART TX yang dihasilkan menggunakan FIFO generator.
-5. **`fifo_uart_rx`**  
-   Buffer UART RX yang dihasilkan menggunakan FIFO generator.
-6. **`axi_lite_ifc.v`**  
-   Interface AXI Lite Slave yang berfungsi sebagai penghubung antara PL (Programmable Logic) dan PS (Processing System).
+1. **`uart_tx.v`**   Bertindak sebagai pengontrol UART untuk transmisi data (UART TX controller).
+2. **`uart_rx.v`**  Bertindak sebagai pengontrol UART untuk penerimaan data (UART RX controller).
+3. **`baudrate_generator.v`**  Bertindak sebagai pencacah clock, di mana setiap 16 tick adalah periode setiap bit baudrate.
+4. **`fifo_uart_tx`**  Buffer UART TX yang dihasilkan menggunakan FIFO generator.
+5. **`fifo_uart_rx`**  Buffer UART RX yang dihasilkan menggunakan FIFO generator.
+6. **`axi_lite_slave.v`**  Interface AXI Lite Slave yang berfungsi sebagai penghubung antara PL (Programmable Logic) dan PS (Processing System).
 
 ---
 
